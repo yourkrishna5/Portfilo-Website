@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Khanal's Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Krishna Khanal</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Background Scene -->
+    <div id="background-scene">
+        <div id="sun"></div>
+        <div id="moon"></div>
+        <div id="sea"></div>
+        <div id="message">Good Day! I'm Krishna Khanal.</div>
+        <div id="notice-board">
+            <h2>Notice Board</h2>
+            <ul id="notices"></ul>
+        </div>
+    </div>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Intro Section -->
+        <div class="intro" id="home">
+            <h2>Hello, I'm Krishna Khanal</h2>
+            <p>
+                I am passionate about technology, AI, and learning new things. Welcome to my personal website where I share my work and ideas.
+            </p>
+        </div>
+
+        <!-- Articles Section -->
+        <div id="articles">
+            <h2>Articles</h2>
+            <div class="article">
+                <h3>Understanding AI and Machine Learning</h3>
+                <p>
+                    Artificial Intelligence (AI) is the simulation of human intelligence in machines that are programmed to think and learn. Machine Learning (ML) is a subset of AI that focuses on the development of algorithms that allow computers to learn from data. In this article, we explore the basics of these technologies and their applications.
+                </p>
+            </div>
+            <div class="article">
+                <h3>Introduction to Python Programming</h3>
+                <p>
+                    Python is a versatile and powerful programming language used for web development, data analysis, AI, and more. It is beginner-friendly and easy to learn, making it one of the most popular programming languages today.
+                </p>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Python Example: Fibonacci Sequence</h3>
+                <pre>
+# Python code to display Fibonacci sequence
+def fibonacci(n):
+    a, b = 0, 1
+    for _ in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
+fibonacci(10)  # Print first 10 Fibonacci numbers
+                </pre>
+            </div>
+            <div class="project">
+                <h3>Python Example: Simple Calculator</h3>
+                <pre>
+# Python code for simple calculator
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    return x / y
+
+print("Sum:", add(10, 5))
+print("Difference:", subtract(10, 5))
+                </pre>
+            </div>
+        </div>
+
+        <!-- Resources Section -->
+        <div id="resources">
+            <h2>Resources</h2>
+            <p>Explore my collection of resources on AI, Machine Learning, and more!</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Include JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
